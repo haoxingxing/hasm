@@ -7,7 +7,8 @@ build:
     - sed -i 's/deb\.debian\.org/mirrors\.ustc\.edu\.cn/g' /etc/apt/sources.list && sed -i 's/security\.debian\.org/mirrors\.ustc\.edu\.cn/g' /etc/apt/sources.list
     - apt update && apt -y install make autoconf cmake
   script:
-    - bash ./build.sh
+    - cmake .
+    - make
   artifacts:
     paths:
       - "build/*"
