@@ -1,13 +1,13 @@
-0  !VER A0.0.1
-1  !REG @int builtin::int
-2  !SAV @_consts_::int_0 @int$0
-3  !SAV @_consts_::int_1 @int$1
-4  !SAV @_consts_::int_2 @int$3
-5  !SAV @_consts_::str_1 @str$"Hello World!"
-6  !SAV @c @int::construct 0
-7  !SAV @builtin::cout @t1
-8  !CAL null @t1 @_consts_::str_1
-9  !CAL null @c::increase  @_consts_::int_1
-10 !IFT @c::equals #_consts_::int_2 11 10
-11 !GTO 8
-12 !CAL @builtin::exit @_consts_::int_0
+VER A0.0.1
+REG @int builtin::int
+SAV @_consts_::int_0 @int$0
+SAV @_consts_::int_1 @int$1
+SAV @_consts_::int_2 @int$3
+SAV @_consts_::str_1 @str$"Hello World"
+SAV @c @int::construct 0
+SAV @builtin::cout @t1
+CAL null @t1 @_consts_::str_1
+CAL null @c::increase  @_consts_::int_1
+IFT @c::equals #_consts_::int_2 11 10
+GTO 8
+CAL @builtin::exit @_consts_::int_0
