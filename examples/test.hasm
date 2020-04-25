@@ -6,8 +6,10 @@ SAV @_consts_::int_2 @int$3
 SAV @_consts_::str_1 @str$"Hello World"
 SAV @c @int::construct 0
 SAV @builtin::cout @t1
+TAG w1
 CAL null @t1 @_consts_::str_1
 CAL null @c::increase  @_consts_::int_1
-IFT @c::equals #_consts_::int_2 11 10
-GTO 8
+IFT @c::equals #_consts_::int_2 w2 w1
+GTO w1
+TAG w2
 CAL @builtin::exit @_consts_::int_0
